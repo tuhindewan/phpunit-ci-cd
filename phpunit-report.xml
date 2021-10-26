@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/Users/bernhard/code/4007 - PHPUnit GitLab Integration/promotion_code/tests" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.002550">
+    <testsuite name="PromotionCodeTest" file="/Users/bernhard/code/4007 - PHPUnit GitLab Integration/promotion_code/tests/PromotionCodeTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.002550">
+      <testcase name="testCanBeCreatedFromValidPromotionCode" class="PromotionCodeTest" classname="PromotionCodeTest" file="/Users/bernhard/code/4007 - PHPUnit GitLab Integration/promotion_code/tests/PromotionCodeTest.php" line="6" assertions="1" time="0.002147"/>
+      <testcase name="testCannotBeCreatedFromInvalidPromotionCode" class="PromotionCodeTest" classname="PromotionCodeTest" file="/Users/bernhard/code/4007 - PHPUnit GitLab Integration/promotion_code/tests/PromotionCodeTest.php" line="14" assertions="1" time="0.000403"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

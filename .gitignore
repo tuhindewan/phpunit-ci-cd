@@ -1,0 +1,4 @@
+bin/
+vendor/
+.phpunit.cache
+composer-setup.php
