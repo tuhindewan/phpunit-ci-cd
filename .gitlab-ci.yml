@@ -1,0 +1,20 @@
+image: php:8.0.12-cli
+
+cache:
+  paths:
+    - vendor/
+
+before_script:
+  - apt-get update -ygg
+  - apt-get install -yqq curl
+  - curl -sS https://getcomposer.org/installer | php
+  - php composer.phar install
+
+test:
+  script:
+   - vendor/bin/phpunit --bootstrap src/autoload.php --colors=never --log-junit phpunit-report.xml tests
+  artifacts:
+    when: always
+    reports:
+      junit: phpunit-report.xml
+  
