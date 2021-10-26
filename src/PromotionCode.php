@@ -17,7 +17,7 @@ final class PromotionCode
 
     private function ensureIsValidPromotionCode(string $promotionCode): void
     {
-        if (strlen($promotionCode) != 7) {
+        if (strlen($promotionCode) != 6) {
             throw new InvalidArgumentException(
                 sprintf(
                     '"%s" is not a valid promotion code',
