@@ -13,10 +13,9 @@ before_script:
 
 test:
   script:
-   - vendor/bin/phpunit --bootstrap src/autoload.php --colors=never --log-junit phpunit-report.xml tests
+    - vendor/bin/phpunit --bootstrap src/autoload.php --colors=never --log-junit phpunit-report.xml tests
   allow_failure: true
   artifacts:
     when: always
     reports:
       junit: phpunit-report.xml
-  
